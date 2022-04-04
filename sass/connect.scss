@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$color: rgb(5, 5, 82);
+$linear: rgb(8, 8, 94);
+// $linear: linear-gradient(rgba(13, 13, 71, 0.767),  rgba(0, 0, 255, 0.74));
+
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    z-index: 1;
+    flex-basis: auto;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    ul img{
+        width: 50px;
+        height: 50px;
+    }
+    ul li{
+        padding-right: 30px;
+    }
+    ul li a:hover{
+        color: blue;
+        transition: 0.5s ease-in-out;
+    }
+    a{
+        text-decoration: none;
+        color: darkblue;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    .wallet{
+        margin-right: 200px;
+    }
+    .connect {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 2px solid $linear;
+        border-radius: 100px;
+        color: $linear;
+        margin-left: 250px;
+        margin-bottom: 10px;
+    }
+    .connect:hover{
+        border: 2px solid blue;
+        color: blue;
+        transition: 0.5s ease-in-out;
+    }
+    .navv{
+        display: none;
+        background-color: #ccc;
+        position: fixed;
+        height: 200px;
+        width: 400px;
+        z-index: 1;
+        transform: translateY(40px);
+    }
+    .navv .fa{
+        font-size: 20px;
+        float: right;
+        display: block;
+        padding: 20px;
+    }
+    .navv .fa:hover{
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+    .navv ul{
+        display: block;
+    }
+    .navv li a{
+        text-decoration: none;
+        color: $color;
+        font-size: 20px;
+        display: block;
+        padding: 10px;
+
+    }
+    .navv li a:hover{
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+    .font{
+        display: none;
+    }
+    .font .fas{
+        font-size: 40px;
+        color: $color;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .font .fas:hover{
+        color: black;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU// MENU
+.menu{
+    background-color: $linear;
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    margin-top: 100px;
+
+    h1{
+        color: #fff;
+        font-size: 40px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+    a:hover{
+        color: lightblue;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+
+// img-header// img-header// img-header// img-header// img-header// img-header
+.img-header{
+    margin-top: 10px;
+    img{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+// avail// avail// avail// avail// avail// avail// avail
+.avail{
+    h2{
+        color: $color;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+}
+
+// wall// wall// wall// wall// wall// wall// wall// wall// wall// wall
+.wall{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-left: 10%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.616)), url(../images/undraw_Credit_card_payment_re_o911.png);
+    background-size: cover;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+    h3{
+        display: inline;
+        padding-left: 40px;
+    }
+    .each-grid{
+        width: 95%;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
+        a{
+            padding: 15px 40px;
+            text-align: end;
+            text-decoration: none;
+            color: white;
+            background-color: orangered;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        a:hover{
+            font-size: 20px;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+// Footer// Footer// Footer// Footer// Footer// Footer// Footer// Footer// Footer
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url(../images/foot.png);
+    background-size: cover;
+    border-top: 1px solid #ccc;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    p{
+        color: $color;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    h2{
+        color: black;
+        padding-bottom: 20px;
+    }
+    .footer-grid1{
+        padding-left: 250px;
+    }
+    .footer-grid2{
+        input{
+            height: 60px;
+            width: 300px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+        input[type="text"]::placeholder {  
+        text-align: center;
+        font-family: fantasy;
+        } 
+        button{
+            background-color: $color;
+            padding: 15px 40px;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: blue;;
+            font-weight: bold;
+        }
+        a:hover{
+            color: $color;
+            transition: 0.5s ease-in-out;
+
+        }
+    }
+}
+
+
+
+// MediaQuery// MediaQuery// MediaQuery// MediaQuery// MediaQuery// MediaQuery// MediaQuery
+@media(max-width: 768px){
+    .header ul li .none{
+        display: none;
+    }
+    .header .connect{
+        display: none;
+    }
+    .header .font{
+        display: block;
+    }
+    .wall{
+        margin-left: 10px;
+    }
+    .footer{
+        display: block;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.616)), url(../images/foot.png);
+        margin-top: 20px;
+        .footer-grid1{
+            padding-left: 30px;
+            padding-bottom: 40px;
+        }
+        .footer-grid2{
+            padding-left: 30px;
+        }
+    }
+}
+
+
+@media(max-width: 1400px){
+    .header ul li .none{
+        display: none;
+    }
+    .header .connect{
+        display: none;
+    }
+    .header .font{
+        display: block;
+    }
+}
